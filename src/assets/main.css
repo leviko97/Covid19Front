@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap');
+@import url("//cdn.web-fonts.ge/fonts/bpg-glaho/css/bpg-glaho.min.css");
+@import "toastr";
+
+*{
+    font-family: 'Nunito', "BPG Glaho", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: var(--el-bg-color-overlay);
+}
+.container{
+    width: 1320px;
+    margin: auto;
+}
+.header{
+    background: #fff;
+    box-shadow: var(--el-box-shadow-light);
+    display: flex;
+    align-items: center;
+}
+.w-100{
+    width: 100%;
+}
+.max-content{
+    max-width: max-content;
+}
+a{
+    text-decoration: none;
+    color: var(--el-color-primary);
+}
+.el-form-item:last-child {
+    margin-bottom: 0;
+}
+.el-main.center{
+    min-height: calc(100vh - 60px);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 1360px) {
+    .container{
+        width: 1140px;
+    }
+}
+@media only screen and (max-width: 1180px) {
+    .container{
+        width: 960px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .container{
+        width: 100%;
+    }
+}
